@@ -1,152 +1,410 @@
-<h1> Desafio: Aprenda na Prática Programação Orientada a Objetos</h1>
+# 🚀 Bootcamp Java Developer - Sistema de Gestão
 
-<p align="center"> 📜 <a href="https://academiapme-my.sharepoint.com/:p:/g/personal/camila_cavalcante_dio_me/EaXyYOjBaFpZjkxhexMo5EcBKMEEAI5t5aHlsTjnBQJlUw?e=nxdB6C"> SLIDES APRESENTADO NO PROJETO </a> 📜 </P>
-<p> Sejam bem-vindos ao desafio: <strong>APRENDENDO NA PRÁTICA O PARADIGMA DE ORIENTAÇÃO A OBJETOS.</strong><br>Desafio este que tive a honra de co-criar com a plataforma de cursos online <strong><a href="https://web.digitalinnovation.one/">DIGITAL INNOVATION ONE</a></strong> 💛🧡 e disponibilizado de forma gratuita para a comunidade dos desenvolvedores Java.<br>
-    💎 O objetivo principal é colocar em prática umas das principais ferramentas da OO: <strong>ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO,</strong> através de um projeto Java. </p>
+<div align="center">
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![POO](https://img.shields.io/badge/POO-4CAF50?style=for-the-badge&logo=object-oriented-programming&logoColor=white)
+![DIO](https://img.shields.io/badge/DIO-FF6B35?style=for-the-badge&logo=digital-innovation-one&logoColor=white)
 
+**Sistema completo de gestão de bootcamp com Programação Orientada a Objetos**
 
-<h2>🛑 Pré-Requisitos</h2>
+[![GitHub stars](https://img.shields.io/github/stars/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
+[![GitHub forks](https://img.shields.io/github/forks/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
 
-<p>
-✅ Conhecer a sintaxe da Java<br>
-✅ Java JDK 11<br>
-✅ IDE para desenvolvimento Java (usarei IntelliJ)<br>
-✅ Git<br>
-✅ Conta no GitHub<br>
-</p>
+</div>
 
+---
 
-<h2> 👣 Passo-a-Passo</h2>
+## 📋 Índice
 
-<p>
-<strong>	1.</strong> Vamos ABSTRAIR o DOMÍNIO Bootcamp e MODELAR seus ATRIBUTOS E MÉTODOS <br>
-<strong>	2.</strong> Criaremos as CLASSES: Bootcamp, Cursos, Mentorias e Devs e vamos relaciona-las <br>
-<strong>	3.</strong> As CLASSES Curso, Mentoria e Devs também serão MODELADOS, ou seja, criaremos seus ATRIBUTOS E MÉTODOS <br> 
-<strong>	4.</strong> Para que o código fique mais legível e de fácil manutenção, iremos utilizar de algumas das ferramentas que o PARADIGMA DE ORIENTAÇÃO A OBJETOS (POO) nos oferece: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO <br>
-<strong>	5.</strong> E para representar CLASSES que foram criadas e relacionadas, iremos transforma-las em OBJETOS<br>
-</p>
+- [🎯 Sobre o Projeto](#-sobre-o-projeto)
+- [🏗️ Arquitetura do Sistema](#️-arquitetura-do-sistema)
+- [🔧 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📚 Conceitos de POO Aplicados](#-conceitos-de-poo-aplicados)
+- [🚀 Como Executar](#-como-executar)
+- [📖 Documentação das Classes](#-documentação-das-classes)
+- [🎮 Demonstração do Sistema](#-demonstração-do-sistema)
+- [📊 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🤝 Contribuindo](#-contribuindo)
+- [📄 Licença](#-licença)
 
-----
+---
 
-<h2> 📚 Paradigma de Programação Orientado a Objetos (POO) </h2>
+## 🎯 Sobre o Projeto
 
-<p>
-A visão de Orientação a Objetos (OO) é aquela de um mundo de objetos que interagem.<br>
-Este paradigma é um modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre classes, atributos, métodos, objetos, entre outros.<br>
-São 4 os pilares principais do POO: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO. 
-</p>
+Este projeto implementa um **sistema completo de gestão de bootcamp** utilizando os pilares fundamentais da **Programação Orientada a Objetos (POO)**. O sistema permite:
 
+- ✅ Gerenciar bootcamps com múltiplos conteúdos
+- ✅ Inscrever desenvolvedores em bootcamps
+- ✅ Controlar progressão dos desenvolvedores
+- ✅ Calcular experiência (XP) baseada em conteúdos concluídos
+- ✅ Suporte a diferentes tipos de conteúdo (Cursos e Mentorias)
 
-<h3>🔺 ABSTRAÇÃO:</h3>
+### 🎓 Objetivos de Aprendizado
 
-<p>
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.</p>
+- **Abstração**: Modelagem do domínio do problema
+- **Encapsulamento**: Proteção e controle de acesso aos dados
+- **Herança**: Reutilização de código através de hierarquias
+- **Polimorfismo**: Flexibilidade através de interfaces comuns
 
-<h3>🔺 ENCAPSULAMENTO:</h3>
+---
 
-<p> Encapsular significa esconder a implementação dos objetos. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.</p>
+## 🏗️ Arquitetura do Sistema
 
-<h3>🔺 HERANÇA:</h3>
-
-<p>Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.</p>
-
-<h3> 🔺 POLIMORFISMO:</h3>
-
-<p>Capacidade de um objeto poder ser referenciado de várias formas. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele. A capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica é chamada de polimorfismo.</p>
-<br>
-<h2 align="center"> ‼️ CONCEITOS FUNDAMENTAIS POO ‼️ </h2>
-<p>
-<h3>🔻 DOMÍNIO:</h3> 
-Domínio da aplicação, também conhecida como camada de negócio ou de objetos de negócio, é aquela onde estão localizadas as classes que fazem parte do domínio do problema, ou seja, classes correspondentes a objetos que fazem parte da descrição do problema.
-
-<h3>🔻 CLASSE: </h3> 
-Um elemento do código que tem a função de representar objetos do mundo real. Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e comportamentos desse objeto.
-
-<h3>🔻 ATRIBUTO: </h3>
-Atributos são, basicamente, a estrutura de dados que vai representar a classe. Os atributos também são conhecidos como VARIÁVEL DE CLASSE, e podem ser divididos em dois tipos básicos: atributos de instância e de classe. 
-
-<h3>🔻 VARIÁVEL: </h3>
-Uma “região de memória (do computador) previamente identificada cuja finalidade é armazenar os dados ou informações de um programa por um determinado espaço de tempo”.
-
-<h3>🔻 MÉTODO: </h3>
-Os métodos representam os estados e ações dos objetos e classes.
-
-<h3>🔻 OBJETO: </h3>
-Em POO, objeto é um "molde" de uma determinada classe, que passa a existir a partir de uma instância da classe. A classe define o comportamento do objeto, usando atributos (propriedades) e métodos (ações).
-Objeto em ciência da computação, é uma referência a um local da memória que possui um valor. Um objeto pode ser uma variável, função, ou estrutura de dados. 
-
-<h3>🔻 INSTÂNCIA: </h3>
-Uma instância de uma classe é um novo objeto criado dessa classe, com o operador new. Instanciar uma classe é criar um novo objeto do mesmo tipo dessa classe. Uma classe somente poderá ser utilizada após ser instanciada.
-
-</p>
+```mermaid
+classDiagram
+    class Conteudo {
+        <<abstract>>
+        +String titulo
+        +String descricao
+        +calcularXp()* double
+    }
     
-------------
-<br>
+    class Curso {
+        +int cargaHoraria
+        +calcularXp() double
+    }
+    
+    class Mentoria {
+        +LocalDate data
+        +calcularXp() double
+    }
+    
+    class Dev {
+        +String nome
+        +Set~Conteudo~ conteudosInscritos
+        +Set~Conteudo~ conteudosConcluidos
+        +inscreverBootcamp(Bootcamp)
+        +progredir()
+        +calcularTotalXp() double
+    }
+    
+    class Bootcamp {
+        +String nome
+        +String descricao
+        +LocalDate dataInicial
+        +LocalDate dataFinal
+        +Set~Dev~ devsInscritos
+        +Set~Conteudo~ conteudos
+    }
+    
+    Conteudo <|-- Curso
+    Conteudo <|-- Mentoria
+    Dev --> Conteudo : inscrito/concluído
+    Bootcamp --> Conteudo : contém
+    Bootcamp --> Dev : possui
+```
 
-<h2> 🧮 Linguagem de Programação vs Paradigma de Linguagem de Programação</h2>
+---
 
-<p>
-<h3> ✨ LINGUAGEM DE PROGRAMAÇÃO:</h3> 
-É uma linguagem formal que, através de uma série de instruções, permite que um programador escreva um conjunto de ordens, ações consecutivas, dados e algoritmos para criar programas que controlam o comportamento físico e lógico de uma máquina.<br>
-Seguem alguns exemplos de como as linguagens de programação podem ser classificadas:<br>
-<br>
-🔺 Nível de abstração:<br>
-Baixo Nível: Assembly<br>
-Médio Nível: C, C++, D, Objective C, etc.<br>
-Alto Nível: Java, C#, PHP, Javascript, etc.<br>
-Altíssimo Nível: Python, Ruby, Elixir, etc.<br>
-<br>
-🔺 Paradigma de programação:<br>
-Programação Estruturada: C, Pascal, Ada, etc.<br>
-Programação Orientada a Objetos: Java, C#, C++, Objective C, D, etc.<br>
-Programação Funcional: Lisp, Scheme, Erlang, Elixir, etc.<br>
-<br>
-🔺 Linguagens classificadas pela arquitetura da aplicação:<br>
-Desktop: C, C++, Object Pascal, Java, etc.<br>
-Web: PHP, Ruby, Javascript, Java, etc.<br>
-<br>
-🔺 Tipo de execução:<br>
-Linguagens compiladas: C, C++, Pascal, D, GO, etc.<br>
-Linguagens Interpretadas: Python, Ruby, PHP, Javascript, etc.<br>
-Linguagens Hibridas: Java, Erlang, Elixir, etc.<br>
+## 🔧 Tecnologias Utilizadas
 
+- **Java 11+** - Linguagem de programação
+- **IntelliJ IDEA** - IDE de desenvolvimento
+- **Git** - Controle de versão
+- **Maven/Gradle** - Gerenciamento de dependências
 
-<h3> ✨ PARADIGMA DE LINGUAGEM DE PROGRAMAÇÃO</h3> 
+---
 
-É um conjunto de características que podem ser utilizados para categorizar determinado grupo de linguagens. Um paradigma pode oferecer técnicas apropriadas para uma aplicação específica.<br>
-<br>
-<strong>PARADIGMAS PRINCIPAIS e SEUS SUBPARADIGMAS</strong><br>
+## 📚 Conceitos de POO Aplicados
 
-🔸 <strong>1. Paradigma Imperativo</strong><br>
-Neste paradigma, o programa descreve o processamento necessário para solucionar o problema. Assim, o paradigma imperativo é caracterizado por execução sequencial de instruções, pelo uso de variáveis que representam posições de memória e pelo uso de instruções de atribuição que alteram os valores dessas variáveis.<br>
-Vejamos alguns Subparadigmas do Paradigma Imperativo e exemplos linguagens de programação que adotam esses subparadigmas.<br>
-<br>
-🔸  1.1 Paradigma estruturado:  ALGOL 58 e ALGOL 60 <br>
-🔸  1.2 Paradigma concorrente: Java e Ada<br>
-🔸  1.3 Paradigma Orientado a Objetos: Smalltalk e Java<br>
-<br>
-🔹 <strong>2. Paradigma Declarativo</strong><br>
-Este paradigma é o modelo no qual os resultados são descritos, mas os passos para chegar aos resultados não são estabelecidos.<br>
-Vejamos alguns Subparadigmas do Paradigma Declarativo e exemplos linguagens de programação que adotam esses subparadigmas:<br>
-<br>
-🔹 2.1 Paradigma Funcional: Lisp e Haskell<br>
-🔹 2.2 Paradigma Lógico: Prolog<br>
-</p>
+### 🔺 Abstração
+- Classe abstrata `Conteudo` define a estrutura comum
+- Método abstrato `calcularXp()` implementado diferentemente em cada subclasse
 
-<h2> 🤝 Contribuindo </h2>
+### 🔺 Encapsulamento
+- Atributos privados com getters/setters
+- Métodos públicos para interação controlada
+- Proteção de dados internos das classes
 
-<p>
-Este repositório foi criado para fins de estudo, então contribua com ele.<br>
-Se te ajudei de alguma forma, ficarei feliz em saber. E caso você conheça alguém que se identidique com o conteúdo, não deixe de compatilhar.<br>
-<br>
-Se possível:<br>
-⭐️  Star o projeto<br>
-🐛 Encontrar e relatar issues<br>
-</p>
+### 🔺 Herança
+- `Curso` e `Mentoria` herdam de `Conteudo`
+- Reutilização de código comum
+- Especialização de comportamentos
 
+### 🔺 Polimorfismo
+- Método `calcularXp()` com implementações diferentes
+- Tratamento uniforme de diferentes tipos de conteúdo
+- Flexibilidade na adição de novos tipos
 
+---
 
-------------
+## 🚀 Como Executar
 
-Disponibilizado com ♥ por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la").
+### Pré-requisitos
+- ✅ Java JDK 11 ou superior
+- ✅ IDE Java (IntelliJ IDEA, Eclipse, VS Code)
+- ✅ Git
+
+### Passos para Execução
+
+1. **Clone o repositório**
+```bash
+git clone https://github.com/username/desafio-poo-dio.git
+cd desafio-poo-dio
+```
+
+2. **Abra o projeto na sua IDE**
+```bash
+# IntelliJ IDEA
+File → Open → selecione a pasta do projeto
+```
+
+3. **Execute a classe Main**
+```bash
+# Via IDE: Run Main.java
+# Via terminal:
+javac -cp src src/Main.java
+java -cp src Main
+```
+
+### 📋 Saída Esperada
+```
+Conteúdos Inscritos Camila:[Curso{titulo='curso java', descricao='descrição curso java', cargaHoraria=8}, Curso{titulo='curso js', descricao='descrição curso js', cargaHoraria=4}, Mentoria{titulo='mentoria de java', descricao='descrição mentoria java', data=2024-01-15}]
+-
+Conteúdos Inscritos Camila:[Curso{titulo='curso js', descricao='descrição curso js', cargaHoraria=4}, Mentoria{titulo='mentoria de java', descricao='descrição mentoria java', data=2024-01-15}]
+Conteúdos Concluídos Camila:[Curso{titulo='curso java', descricao='descrição curso java', cargaHoraria=8}]
+XP:80.0
+-------
+Conteúdos Inscritos João:[Curso{titulo='curso java', descricao='descrição curso java', cargaHoraria=8}, Curso{titulo='curso js', descricao='descrição curso js', cargaHoraria=4}, Mentoria{titulo='mentoria de java', descricao='descrição mentoria java', data=2024-01-15}]
+-
+Conteúdos Inscritos João:[]
+Conteúdos Concluidos João:[Curso{titulo='curso java', descricao='descrição curso java', cargaHoraria=8}, Curso{titulo='curso js', descricao='descrição curso js', cargaHoraria=4}, Mentoria{titulo='mentoria de java', descricao='descrição mentoria java', data=2024-01-15}]
+XP:150.0
+```
+
+---
+
+## 📖 Documentação das Classes
+
+### 🏛️ Conteudo (Classe Abstrata)
+```java
+/**
+ * Classe abstrata que representa um conteúdo educacional
+ * Esta é a classe base para todos os tipos de conteúdo (Cursos, Mentorias, etc.)
+ * Define a estrutura comum que todos os conteúdos devem ter
+ */
+public abstract class Conteudo {
+    protected static final double XP_PADRAO = 10d;
+    private String titulo;
+    private String descricao;
+    public abstract double calcularXp();
+}
+```
+
+### 📚 Curso
+```java
+/**
+ * Classe que representa um Curso
+ * Herda de Conteudo e implementa a lógica específica para cursos
+ * O XP de um curso é calculado multiplicando o XP_PADRAO pela carga horária
+ */
+public class Curso extends Conteudo {
+    private int cargaHoraria;
+    
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO * cargaHoraria;
+    }
+}
+```
+
+### 🎓 Mentoria
+```java
+/**
+ * Classe que representa uma Mentoria
+ * Herda de Conteudo e implementa a lógica específica para mentorias
+ * O XP de uma mentoria é fixo: XP_PADRAO + 20 pontos extras
+ */
+public class Mentoria extends Conteudo {
+    private LocalDate data;
+    
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO + 20d;
+    }
+}
+```
+
+### 👨‍💻 Dev (Desenvolvedor)
+```java
+/**
+ * Classe que representa um Desenvolvedor (Dev)
+ * Gerencia os conteúdos inscritos e concluídos pelo desenvolvedor
+ * Calcula o XP total baseado nos conteúdos concluídos
+ */
+public class Dev {
+    private String nome;
+    private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    
+    public void inscreverBootcamp(Bootcamp bootcamp);
+    public void progredir();
+    public double calcularTotalXp();
+}
+```
+
+### 🏕️ Bootcamp
+```java
+/**
+ * Classe que representa um Bootcamp
+ * Um bootcamp possui um conjunto de conteúdos e desenvolvedores inscritos
+ * Tem duração fixa de 45 dias a partir da data de criação
+ */
+public class Bootcamp {
+    private String nome;
+    private String descricao;
+    private final LocalDate dataInicial = LocalDate.now();
+    private final LocalDate dataFinal = dataInicial.plusDays(45);
+    private Set<Dev> devsInscritos = new HashSet<>();
+    private Set<Conteudo> conteudos = new LinkedHashSet<>();
+}
+```
+
+---
+
+## 🎮 Demonstração do Sistema
+
+### 📝 Fluxo Principal
+
+1. **Criação de Conteúdos**
+   - Criação de cursos com carga horária específica
+   - Criação de mentorias com data agendada
+
+2. **Formação do Bootcamp**
+   - Adição de conteúdos ao bootcamp
+   - Definição de nome e descrição
+
+3. **Inscrição de Desenvolvedores**
+   - Desenvolvedores se inscrevem no bootcamp
+   - Todos os conteúdos são adicionados aos inscritos
+
+4. **Progressão**
+   - Desenvolvedores progridem nos conteúdos
+   - Conteúdos são movidos de "inscritos" para "concluídos"
+   - XP é calculado baseado nos conteúdos concluídos
+
+### 🧮 Cálculo de XP
+
+| Tipo de Conteúdo | Fórmula | Exemplo |
+|------------------|---------|---------|
+| **Curso** | `XP_PADRAO × cargaHoraria` | 8h = 80 XP |
+| **Mentoria** | `XP_PADRAO + 20` | Fixo = 30 XP |
+
+---
+
+## 📊 Estrutura do Projeto
+
+```
+desafio-poo-dio/
+├── src/
+│   ├── Main.java                           # Classe principal com demonstração
+│   └── br/com/dio/desafio/dominio/
+│       ├── Conteudo.java                  # Classe abstrata base
+│       ├── Curso.java                     # Implementação de curso
+│       ├── Mentoria.java                  # Implementação de mentoria
+│       ├── Dev.java                       # Classe do desenvolvedor
+│       └── Bootcamp.java                  # Classe do bootcamp
+├── out/                                   # Arquivos compilados (.class)
+├── README.md                              # Este arquivo
+└── desafio-poo-dio.iml                    # Configuração do IntelliJ
+```
+
+---
+
+## 🎯 Funcionalidades Implementadas
+
+### ✅ Gestão de Conteúdos
+- [x] Criação de cursos com carga horária
+- [x] Criação de mentorias com data
+- [x] Cálculo automático de XP por tipo
+
+### ✅ Gestão de Bootcamp
+- [x] Criação de bootcamp com duração fixa (45 dias)
+- [x] Adição de múltiplos conteúdos
+- [x] Controle de desenvolvedores inscritos
+
+### ✅ Gestão de Desenvolvedores
+- [x] Inscrição em bootcamps
+- [x] Progressão sequencial nos conteúdos
+- [x] Cálculo de XP total acumulado
+- [x] Controle de conteúdos inscritos vs concluídos
+
+### ✅ Recursos Técnicos
+- [x] Documentação JavaDoc completa
+- [x] Comentários explicativos em todo código
+- [x] Implementação dos 4 pilares da POO
+- [x] Estrutura de dados otimizada (LinkedHashSet, HashSet)
+
+---
+
+## 🚀 Melhorias Futuras
+
+### 🔮 Funcionalidades Planejadas
+- [ ] Sistema de certificados
+- [ ] Ranking de desenvolvedores
+- [ ] Notificações de progresso
+- [ ] Interface gráfica (Swing/JavaFX)
+- [ ] Persistência em banco de dados
+- [ ] API REST para integração
+
+### 🛠️ Melhorias Técnicas
+- [ ] Testes unitários (JUnit)
+- [ ] Logging estruturado
+- [ ] Validação de dados
+- [ ] Tratamento de exceções
+- [ ] Padrões de design (Factory, Builder)
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Para contribuir:
+
+1. **Fork** o projeto
+2. **Crie** uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. **Abra** um Pull Request
+
+### 📋 Padrões de Contribuição
+- Siga as convenções de código Java
+- Adicione comentários para código complexo
+- Mantenha a documentação atualizada
+- Teste suas alterações antes de submeter
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 👥 Autores
+
+- **Rui Francisco** - *Desenvolvimento e Documentação* - [GitHub](https://github.com/ruifrancisco)
+- **Digital Innovation One** - *Conceito Original* - [DIO](https://web.digitalinnovation.one/)
+
+---
+
+## 🙏 Agradecimentos
+
+- [Digital Innovation One](https://web.digitalinnovation.one/) pela oportunidade de aprendizado
+- Comunidade Java pela troca de conhecimento
+- Todos os desenvolvedores que contribuíram com feedback
+
+---
+
+<div align="center">
+
+**⭐ Se este projeto te ajudou, considere dar uma estrela! ⭐**
+
+[![GitHub stars](https://img.shields.io/github/stars/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
+[![GitHub forks](https://img.shields.io/github/forks/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
+
+---
+
+**Desenvolvido com ❤️ para a comunidade Java**
+
+</div>
