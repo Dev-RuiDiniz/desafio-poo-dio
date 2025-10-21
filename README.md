@@ -8,8 +8,8 @@
 
 **Sistema completo de gestão de bootcamp com Programação Orientada a Objetos**
 
-[![GitHub stars](https://img.shields.io/github/stars/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
-[![GitHub forks](https://img.shields.io/github/forks/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
+[![GitHub stars](https://img.shields.io/github/stars/Dev-RuiDiniz/desafio-poo-dio?style=social)](https://github.com/Dev-RuiDiniz/desafio-poo-dio)
+[![GitHub forks](https://img.shields.io/github/forks/Dev-RuiDiniz/desafio-poo-dio?style=social)](https://github.com/Dev-RuiDiniz/desafio-poo-dio)
 
 </div>
 
@@ -140,7 +140,7 @@ classDiagram
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/username/desafio-poo-dio.git
+git clone https://github.com/Dev-RuiDiniz/desafio-poo-dio.git
 cd desafio-poo-dio
 ```
 
@@ -383,7 +383,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👥 Autores
 
-- **Rui Francisco** - *Desenvolvimento e Documentação* - [GitHub](https://github.com/ruifrancisco)
+- **Rui Diniz** - *Desenvolvimento e Documentação* - [GitHub](https://github.com/Dev-RuiDiniz)
+- **Repositório Oficial** - [`Dev-RuiDiniz/desafio-poo-dio`](https://github.com/Dev-RuiDiniz/desafio-poo-dio)
 - **Digital Innovation One** - *Conceito Original* - [DIO](https://web.digitalinnovation.one/)
 
 ---
@@ -400,8 +401,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **⭐ Se este projeto te ajudou, considere dar uma estrela! ⭐**
 
-[![GitHub stars](https://img.shields.io/github/stars/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
-[![GitHub forks](https://img.shields.io/github/forks/username/desafio-poo-dio?style=social)](https://github.com/username/desafio-poo-dio)
+[![GitHub stars](https://img.shields.io/github/stars/Dev-RuiDiniz/desafio-poo-dio?style=social)](https://github.com/Dev-RuiDiniz/desafio-poo-dio)
+[![GitHub forks](https://img.shields.io/github/forks/Dev-RuiDiniz/desafio-poo-dio?style=social)](https://github.com/Dev-RuiDiniz/desafio-poo-dio)
 
 ---
 
